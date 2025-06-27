@@ -1,0 +1,100 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Full screen background */
+body {
+  height: 100vh;
+  background: linear-gradient(to top right, #20002c, #cbb4d4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('sunset.avif'); /* Optional: starry bg */
+  background-size: cover;
+}
+
+/* Form Container */
+form {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+/* Heading */
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+/* Input fields */
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Button */
+form button {
+  width: 100%;
+  padding: 12px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: white;
+  color: black;
+}
+/* Responsive Design */
+@media (max-width: 600px) { 
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    form h2 {
+        font-size: 20px;
+    }
+    
+    form input,
+    form textarea {
+        font-size: 16px;
+    }
+    
+    form button {
+        font-size: 16px;
+        padding: 10px;
+    }
+    }
+/* Error Message */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}               
+/* Success Message */
+.success {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+}   
